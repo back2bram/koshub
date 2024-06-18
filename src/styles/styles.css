@@ -1,0 +1,609 @@
+/* my style Font */
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*
+    gunakan em => selain text 
+    gunakan rem => text
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  --bg: rgb(197, 197, 197);
+  --bgHeader: rgb(168, 166, 166);
+  --textColor: #000000;
+  --textColorHover: #ffffff;
+  --footColor: #06070a;
+  --btnColor: #000000;
+  --boxColor: #dad1d1;
+  --hargaColor: #153dc2;
+}
+
+body {
+  font-family: "Roboto", "Philosopher", sans-serif;
+  background-color: var(--bg);
+  color: var(--textColor);
+}
+
+#KosHub {
+  font-family: "Philosopher";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: #333;
+  background-color: #333;
+}
+
+/* Navigation style */
+header {
+  margin-block-end: 7rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bgHeader);
+  padding: 1rem 3%;
+  border-bottom: 1px solid #49483e;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.navbar img {
+  width: 5rem;
+  height: 4.5rem;
+}
+
+/* .navbar .navlogo {
+  color: var(--textColor);
+}
+
+.navbar .navlogo span {
+  color: rgba(255, 174, 0, 0.829);
+} */
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  color: var(--textColor);
+  margin: 0 2.3em;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--textColorHover);
+  background-color: var(--textColor);
+  border-radius: 0em;
+  padding: 0.5em;
+}
+
+.navbar .navbar-extra a {
+  color: var(--textColor);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--textColorHover);
+  padding: 0.5rem;
+}
+
+#menu-list {
+  display: none;
+}
+
+/* main content */
+.container {
+  min-height: 100dvh;
+  display: flex;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+main {
+  /* display: grid;
+  grid-template-rows: repeat(6, 1fr); */
+  min-height: 100vh;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1. content Header */
+.content1 {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+}
+
+.content1 .content1-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  margin-block-end: 3rem;
+}
+
+.content1-1 img {
+  width: 27rem;
+  height: 24rem;
+  position: relative;
+}
+
+.content1-1 #rumah {
+  position: relative;
+  border-radius: 15px;
+  top: 5rem;
+  z-index: 1;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.content1-1 #rumah1 {
+  position: relative;
+  border-radius: 15px;
+  left: -5rem;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.content1 .content1-2 {
+  line-height: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+
+  font-family: "Roboto";
+  font-size: 1.3rem;
+}
+
+.content1 .content1-2 #KosHub {
+  font-size: 2rem;
+}
+
+/* 2. content Lokasi*/
+.content2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Philosopher";
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+  /* height: 10em; */
+}
+
+.content2-2 h1 {
+  font-family: "Philosopher";
+  font-size: 5rem;
+  text-align: center;
+}
+
+.content2 iframe {
+  width: 25em;
+  height: 10em;
+}
+
+/* 3. Fasilitas bersama */
+.content3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.content3 h1 {
+  font-family: "Philosopher";
+  font-size: 5rem;
+  text-align: center;
+}
+
+.content3 .content3-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 11rem;
+  height: 13rem;
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.box img {
+  width: 50px;
+  height: 50px;
+}
+
+.box p {
+  font-family: san serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card {
+  border-radius: 8px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 2 2px 0 rgba(0, 0, 0, 0.5); */
+  background-color: var(--boxColor);
+  top: 5rem;
+}
+
+.card-body {
+  line-height: 25px;
+  padding: 2rem;
+}
+
+/* 4. Tipe Kamar */
+
+.line2 {
+  display: block;
+  height: 1px;
+  background: #000;
+  border-bottom: 1px;
+  position: relative;
+  width: 25rem;
+}
+.line2::before {
+  content: "";
+  height: 2px;
+  width: 25rem;
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  background: #000;
+}
+
+.li {
+  list-style: circle;
+}
+
+.content4 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  font-family: "Philosopher";
+  gap: 2rem;
+}
+
+.content4 h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.content4 .content4-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  align-items: center;
+  justify-items: end;
+  padding: 2rem;
+}
+.content4 .content4-2 .section1 {
+  justify-content: end;
+}
+
+.content4 .content4-2 img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.content4 .content4-2 .section2 {
+  font-size: 1.5rem;
+
+  align-self: normal;
+  justify-self: start;
+  margin-left: 5rem;
+}
+
+.harga {
+  font-family: "Philosopher";
+  font-size: 3rem;
+  color: var(--hargaColor);
+
+  justify-self: center;
+}
+
+.content4 .content4-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: start;
+  padding: 2rem;
+}
+
+.content4 .content4-3 .section1 {
+  justify-item: start;
+}
+
+.content4 .content4-3 img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.content4 .content4-3 .section2 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+
+  align-self: normal;
+  justify-items: end;
+  margin-left: 1rem;
+}
+
+.content4 .content4-4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  align-items: center;
+  justify-items: end;
+  padding: 2rem;
+}
+.content4 .content4-4 .section1 {
+  justify-content: end;
+}
+
+.content4 .content4-4 img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.content4 .content4-4 .section2 {
+  font-size: 1.5rem;
+
+  align-self: normal;
+  justify-self: start;
+  margin-left: 5rem;
+}
+
+/* 5. FAQ */
+.content5 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  font-family: "Philosopher";
+}
+
+.content5 h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* 6. About US */
+.content6 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Philosopher";
+  width: 80%;
+  margin: auto;
+}
+
+.content6 h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.content6 p {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Start Footer */
+footer {
+  background-color: var(--footColor);
+  position: static;
+  padding: 20px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Media Queries */
+
+/* Ukurang Laptop */
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 75%;
+    grid-template-columns: auto;
+  }
+
+  .content2 iframe {
+    width: 22em;
+  }
+
+  .harga {
+    font-size: 2.5rem;
+  }
+}
+
+/* Ukurang Tablet */
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+    grid-template-columns: auto;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: var(--textColor);
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  #menu-list {
+    display: inline-block;
+  }
+
+  .content1 {
+    gap: 1rem;
+  }
+
+  .content1-1 img {
+    width: 19rem;
+    height: 15rem;
+  }
+
+  .content2 {
+    width: 90%;
+  }
+  .content2 iframe {
+    width: 13em;
+    height: 8em;
+  }
+
+  .box {
+    width: 11rem;
+    height: 16rem;
+  }
+
+  .harga {
+    font-size: 2rem;
+  }
+  .content4 .content4-2 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .content4 .content4-2 .section1 {
+    margin-left: 1rem;
+    order: 1;
+  }
+
+  .content4 .content4-2 .section2 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+
+    align-self: normal;
+    justify-self: center;
+    margin-left: 1rem;
+  }
+
+  .content4 .content4-3 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .content4 .content4-3 .section2 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+
+    align-self: normal;
+    justify-self: center;
+    margin-left: 1rem;
+  }
+
+  .content4 .content4-3 .section1 {
+    align-items: center;
+  }
+
+  .content4 .content4-4 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+
+  .content4 .content4-4 .section1 {
+    order: 1;
+  }
+
+  .content4 .content4-4 .section2 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+
+    align-self: normal;
+    justify-self: center;
+    margin-left: 1rem;
+  }
+}
+
+/* Ukurang Mobile Phone */
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 55%;
+    grid-template-columns: auto;
+  }
+
+  .content1 .content1-1 {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .content1 .content1-1 #rumah {
+    top: 0;
+  }
+
+  .content1 .content1-1 #rumah1 {
+    left: 0;
+  }
+
+  .content1-1 img {
+    width: 20rem;
+    height: 17rem;
+  }
+
+  .content2 iframe {
+    width: 13em;
+  }
+
+  .box {
+    width: 11rem;
+    height: 17rem;
+  }
+}
